@@ -1,0 +1,18 @@
+theme = "monokai_pro_spectrum"
+
+[editor]
+line-number = "relative"
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+
+[keys.normal.backspace]
+c = ":config-open"
+l = ":open ~/.config/helix/languages.toml"
+s = [ ":w", ":config-reload" ]
