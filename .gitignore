@@ -2,5 +2,11 @@
 !.gitignore
 !.zshrc
 !.config/
+
+# Helix config
 !.config/helix/
 !.config/helix/**
+
+# Zellij config
+!.config/zellij/
+!.config/zellij/config.kdl
