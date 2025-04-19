@@ -62,5 +62,5 @@ alias la="ls -lAh"
 # Local Overrides #
 ###################
 
-# load ~/.local.zshrc if it exists
-[[ -f ~/.local.zshrc ]] || source ~/.local.zshrc
+# source ~/.local.zshrc if it exists
+[[ -f ~/.local.zshrc ]] && source ~/.local.zshrc
