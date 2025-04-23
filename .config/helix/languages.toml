@@ -7,6 +7,11 @@ check = { command = "clippy", rustfmt.extraArgs = ["+nightly"] }
 [[language]]
 name = "markdown"
 formatter = { command = "prettier", args = ["--parser", "markdown"] }
+language-servers = ["marksman", "harper-ls"]
+
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]
 
 [[language]]
 name = "toml"
