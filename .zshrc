@@ -51,6 +51,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # git aliases
 alias ga="git add"
 alias gc="git commit"
+alias gs="git status"
 alias gp="git push"
 
 # dotfiles alias
