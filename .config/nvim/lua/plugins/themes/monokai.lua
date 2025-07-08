@@ -1,0 +1,2 @@
+return { "tanvirtin/monokai.nvim" }
+

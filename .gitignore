@@ -10,3 +10,8 @@
 # Zellij config
 !.config/zellij/
 !.config/zellij/config.kdl
+
+# nvim config
+!.config/nvim/
+!.config/nvim/**
+
