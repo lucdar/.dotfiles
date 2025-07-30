@@ -20,10 +20,10 @@ source $ZSH/oh-my-zsh.sh
 ###############
 
 # set default editor
-export EDITOR="hx"
+export EDITOR="nvim"
 
 # set default git editor
-export GIT_EDITOR="hx"
+export GIT_EDITOR="nvim"
 
 # Add cargo-installed binaries to PATH
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -56,6 +56,16 @@ alias gp="git push"
 
 # dotfiles alias
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+dfedit() {
+    local target_path="$HOME"
+
+    if [ -n "$1" ]; then
+        target_path="$1"
+    fi
+
+    GIT_DIR="$HOME/.dotfiles/" GIT_WORK_TREE="$HOME" nvim "$target_path"
+}
 
 alias la="ls -lAh"
 
