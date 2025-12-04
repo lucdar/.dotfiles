@@ -11,3 +11,7 @@
 !.config/nvim/
 !.config/nvim/**
 
+# Alacritty config
+!.config/alacritty/
+!.config/alacritty/alacritty.toml
+
